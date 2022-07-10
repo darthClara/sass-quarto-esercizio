@@ -1,0 +1,15 @@
+@function conversione($numero) {
+    $valoreinrem: ($numero / 16)+rem;
+    @return $valoreinrem;
+}
+
+body {
+    background-color: rgb(220, 234, 211);
+
+    article {
+        font-size: conversione(16);
+    }
+    section:nth-child(3){
+        font-size: conversione(24);
+    }
+}
